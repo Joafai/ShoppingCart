@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: auto;
+}
+
+.cards {
+  position: relative;
+  width: 250px;
+  height: 335px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 0.3px solid;
+  border-bottom: 4px solid;
+  border-left: 2px solid;
+
+  border-color: rgba(92, 92, 92, 0.137);
+  border-radius: 4px;
+  margin: 7px;
+}
+.cards:hover {
+  box-shadow: 5px 20px 50px rgb(238, 238, 238);
+}
+
+.image_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+}
+
+.image_box img {
+  display: block;
+  object-fit: cover;
+  width: 290px;
+  height: 236px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.descripcionHolder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.555);
+  height: 0px;
+  width: 290px;
+  transition: 0.15s ease-in;
+  transform-origin: left;
+}
+
+.descripcion {
+  color: rgba(0, 0, 0, 0);
+  padding: 20px;
+  transition: 0.15s ease-in;
+}
+
+.image_box:hover .descripcionHolder {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.653);
+  height: 236px;
+  width: 290px;
+}
+
+.image_box:hover .descripcion {
+  display: block;
+  color: rgb(32, 32, 32);
+}
+
+.details {
+  position: absolute;
+  top: 249px;
+}
+
+.details p:nth-child(1) {
+  font-weight: bold;
+  margin: 3px;
+}
+.details p:nth-child(2) {
+  color: grey;
+  font-size: 0.8rem;
+  margin: 3px;
+}
+.details p:nth-child(3) {
+  font-weight: bold;
+  color: rgb(56, 56, 56);
+  margin: 3px;
+  margin-top: 7px;
+}
+
+.details button {
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #27cfca;
+  outline: none;
+  cursor: pointer;
+  margin: 3px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.details button:hover {
+  background-color: #22b6b1;
+}
+
+.details button:active {
+  background-color: #15817d;
+  box-shadow: none;
+}

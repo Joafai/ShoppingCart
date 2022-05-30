@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+article {
+  width: 60%;
+  margin: auto;
+}
+
+.cart_box img {
+  display: block;
+  object-fit: cover;
+  width: 190px;
+  height: 190px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.tituloItem {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+  left: 196px;
+  top: -191px;
+}
+
+.profesora {
+  position: relative;
+  font-size: 15px;
+  padding: 15px;
+  left: 196px;
+  top: -208px;
+}
+
+.precio {
+  position: relative;
+  font-size: 20px;
+  padding: 15px;
+  left: 488px;
+  top: -175px;
+}
+
+.cart_box {
+  position: relative;
+  width: 587px;
+  height: 196px;
+  padding: 0.5px;
+  background-color: rgb(255, 255, 255);
+  border: 0.3px solid;
+  border-bottom: 4px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-color: rgba(92, 92, 92, 0.096);
+  border-radius: 4px;
+  margin: 7px;
+}
+
+.eliminar {
+  position: relative;
+  top: -145px;
+  left: 206px;
+  padding: 5px 10px;
+  border: none;
+  font-weight: bold;
+  background-color: #e73838;
+  outline: none;
+  cursor: pointer;
+  margin: 3px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.eliminar:hover {
+  background-color: #cc0505;
+}
+
+.eliminar:active {
+  background-color: #8a0e0e;
+  box-shadow: none;
+}
+
+.cart_box div:nth-child(3) button {
+  padding: 5px 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #27cfca;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cart_box div:nth-child(3) button:hover {
+  background-color: darkseagreen;
+}
+.cart_box div:nth-child(3) span {
+  background-color: lightgreen;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  font-size: 2rem;
+  color: #474747;
+
+  letter-spacing: 2px;
+}
+
+.mensajeCarro {
+  position: relative;
+  margin: 107px;
+  padding-bottom: 110px;
+  padding-left: 80px;
+  border-bottom: 1px;
+  border-bottom: 1px solid;
+}
+
+.continuar {
+  padding: 5px 10px;
+  margin: 23px;
+  position: relative;
+  right: 76px;
+  top: 48px;
+  font-weight: bold;
+  width: 158px;
+  height: 42px;
+  letter-spacing: 2px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #27cfca;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.continuar:hover {
+  background-color: #22b6b1;
+}
+
+.continuar:active {
+  background-color: #15817d;
+  box-shadow: none;
+}
+
+.precioTotal {
+  position: relative;
+  font-size: 27px;
+  padding: 15px;
+  left: 307px;
+  top: 7px;
+}
+
+.totalEnvio {
+  position: relative;
+  top: 16px;
+  right: -112px;
+}
