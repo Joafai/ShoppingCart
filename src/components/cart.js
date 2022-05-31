@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../styles/cart.css";
 
 const Cart = ({ cart, setCart }) => {
-  const [precio, setPrecio] = useState(0);
+  const [price, setPrecio] = useState(0);
 
   const handleRemove = (id) => {
     const arr = cart.filter((item) => item.id !== id);
@@ -12,7 +12,7 @@ const Cart = ({ cart, setCart }) => {
 
   const handlePrice = () => {
     let tot = 0;
-    cart.map((item) => (tot += item.precio));
+    cart.map((item) => (tot += item.price));
     setPrecio(tot);
   };
 
@@ -33,9 +33,9 @@ const Cart = ({ cart, setCart }) => {
       {cart.map((item) => (
         <div className="cart_box" key={item.id}>
           <div className="cart_img">
-            <img src={item.img} alt="" />
-            <p className="tituloItem">{item.titulo}</p>
-            <p className="profesora">{item.profe}</p>
+            <img src={item.image} alt="" />
+            <p className="tituloItem">{item.title}</p>
+            <p className="profesora">{item.user}</p>
             <div>
               <button
                 className="eliminar"
@@ -44,13 +44,13 @@ const Cart = ({ cart, setCart }) => {
                 Eliminar
               </button>
             </div>
-            <span className="precio">${item.precio}</span>
+            <span className="precio">${item.price}</span>
           </div>
         </div>
       ))}
       <div className="total">
         <span className="totalEnvio">Total</span>
-        <span className="precioTotal">${precio}</span>
+        <span className="precioTotal">${price}</span>
         <button className="continuar">Continuar</button>
       </div>
     </article>
